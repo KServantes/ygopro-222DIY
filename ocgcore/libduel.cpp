@@ -192,6 +192,17 @@ int32 scriptlib::duel_get_turn_count(lua_State *L) {
 		lua_pushinteger(L, pduel->game_field->infos.turn_id);
 	return 1;
 }
+int32 scriptlib::duel_move_turn_count(lua_State *L) {
+	check_param_count(L, 2);
+	int32 p = lua_tointeger(L, 1);
+	int32 ct = lua_tointeger(L, 2);
+	if(p != 0 && p != 1)
+		return 0;
+	duel* pduel = interpreter::get_duel_info(L);
+	infos.turn_id + ct;
+	infos.turn_id_by_player[p] + ct;
+	return 0;
+}
 int32 scriptlib::duel_get_draw_count(lua_State *L) {
 	check_param_count(L, 1);
 	duel* pduel = interpreter::get_duel_info(L);
