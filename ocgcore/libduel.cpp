@@ -199,9 +199,11 @@ int32 scriptlib::duel_move_turn_count(lua_State *L) {
 	if(p != 0 && p != 1)
 		return 0;
 	duel* pduel = interpreter::get_duel_info(L);
+	pduel->game_field->infos.turn_id
+	pduel->game_field->infos.turn_id_by_player[p]
 	infos.turn_id + ct;
 	infos.turn_id_by_player[p] + ct;
-	return 0;
+	return 1;
 }
 int32 scriptlib::duel_get_draw_count(lua_State *L) {
 	check_param_count(L, 1);
