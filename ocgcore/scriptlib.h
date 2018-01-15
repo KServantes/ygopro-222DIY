@@ -374,6 +374,7 @@ public:
 	static int32 duel_set_lp(lua_State *L);
 	static int32 duel_get_turn_player(lua_State *L);
 	static int32 duel_get_turn_count(lua_State *L);
+	static int32 duel_move_turn_count(lua_State *L);
 	static int32 duel_get_draw_count(lua_State *L);
 	static int32 duel_register_effect(lua_State *L);
 	static int32 duel_register_flag_effect(lua_State *L);
