@@ -383,6 +383,7 @@ static const struct luaL_Reg duellib[] = {
 	{ "SetLP", scriptlib::duel_set_lp },
 	{ "GetTurnPlayer", scriptlib::duel_get_turn_player },
 	{ "GetTurnCount", scriptlib::duel_get_turn_count },
+	{ "MoveTurnCount", scriptlib::duel_move_turn_count},
 	{ "GetDrawCount", scriptlib::duel_get_draw_count },
 	{ "RegisterEffect", scriptlib::duel_register_effect },
 	{ "RegisterFlagEffect", scriptlib::duel_register_flag_effect },
