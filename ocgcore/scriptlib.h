@@ -331,6 +331,7 @@ public:
 	static int32 effect_is_activatable(lua_State *L);
 	static int32 effect_is_activated(lua_State *L);
 	static int32 effect_get_activate_location(lua_State *L);
+	static int32 effect_get_activate_sequence(lua_State *L);
 
 	//Group functions
 	static int32 group_new(lua_State *L);
@@ -373,6 +374,7 @@ public:
 	static int32 duel_set_lp(lua_State *L);
 	static int32 duel_get_turn_player(lua_State *L);
 	static int32 duel_get_turn_count(lua_State *L);
+	static int32 duel_move_turn_count(lua_State *L);
 	static int32 duel_get_draw_count(lua_State *L);
 	static int32 duel_register_effect(lua_State *L);
 	static int32 duel_register_flag_effect(lua_State *L);
